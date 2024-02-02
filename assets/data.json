@@ -1,0 +1,196 @@
+{
+  "pets": [
+    {
+      "id": 0,
+      "name": "Bailey",
+      "age": "1 year",
+      "price": "$80",
+      "category": "Cat",
+      "image": "assets/images/pets/pet-0.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Whiskers",
+      "age": "1 year",
+      "price": "$100",
+      "category": "Dog",
+      "image": "assets/images/pets/pet-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mittens",
+      "age": "2 years",
+      "price": "$300",
+      "category": "Dog",
+      "image": "assets/images/pets/pet-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Smokey",
+      "age": "1.5 years",
+      "price": "$800",
+      "category": "Dog",
+      "image": "assets/images/pets/pet-3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Whiskers Jr.",
+      "age": "4 years",
+      "price": "$200",
+      "category": "Dog",
+      "image": "assets/images/pets/pet-4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Fluffy",
+      "age": "6 months",
+      "price": "$250",
+      "category": "Dog",
+      "image": "assets/images/pets/pet-5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Midnight",
+      "age": "5 years",
+      "price": "$400",
+      "category": "Dog",
+      "image": "assets/images/pets/pet-6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Muffin",
+      "age": "1 year",
+      "price": "$100",
+      "category": "Dog",
+      "image": "assets/images/pets/pet-7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Leo",
+      "age": "8 months",
+      "price": "$120",
+      "category": "Cat",
+      "image": "assets/images/pets/pet-8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Sassy",
+      "age": "3.5 years",
+      "price": "$70",
+      "category": "Cat",
+      "image": "assets/images/pets/pet-9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Oliver",
+      "age": "1.5 years",
+      "price": "$180",
+      "category": "Cat",
+      "image": "assets/images/pets/pet-10.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Ginger",
+      "age": "2 years",
+      "price": "$300",
+      "category": "Cat",
+      "image": "assets/images/pets/pet-11.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Tigger",
+      "age": "1 year",
+      "price": "$200",
+      "category": "Cat",
+      "image": "assets/images/pets/pet-12.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Shadow",
+      "age": "1 year",
+      "price": "$100",
+      "category": "Cat",
+      "image": "assets/images/pets/pet-13.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Misty",
+      "age": "2 years",
+      "price": "$150",
+      "category": "Cat",
+      "image": "assets/images/pets/pet-14.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Whiskey",
+      "age": "1 year",
+      "price": "$80",
+      "category": "Cat",
+      "image": "assets/images/pets/pet-15.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Boots",
+      "age": "1 year",
+      "price": "$100",
+      "category": "Dog",
+      "image": "assets/images/pets/pet-16.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Luna",
+      "age": "1 year",
+      "price": "$80",
+      "category": "Cat",
+      "image": "assets/images/pets/pet-17.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Milo",
+      "age": "1 year",
+      "price": "$150",
+      "category": "Cat",
+      "image": "assets/images/pets/pet-18.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Simba",
+      "age": "1 year",
+      "price": "$100",
+      "category": "Dog",
+      "image": "assets/images/pets/pet-19.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Rex",
+      "age": "1 year",
+      "price": "$80",
+      "category": "Dog",
+      "image": "assets/images/pets/pet-20.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Rocky",
+      "age": "1 year",
+      "price": "$100",
+      "category": "Cat",
+      "image": "assets/images/pets/pet-21.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Buster",
+      "age": "1 year",
+      "price": "$80",
+      "category": "Dog",
+      "image": "assets/images/pets/pet-22.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Buddy",
+      "age": "1 year",
+      "price": "$100",
+      "category": "Cat",
+      "image": "assets/images/pets/pet-23.jpg"
+    }
+  ]
+}
