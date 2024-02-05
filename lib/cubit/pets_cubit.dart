@@ -127,7 +127,7 @@ class PetsCubit extends Cubit<PetsState> {
     final PetModel pet = pets.firstWhere((element) => element.id == id);
     adoptedPets.add(pet);
     final List<PetModel> updatedPresentPets = List.from(state.presentPets);
-    // updatedPresentPets.removeWhere((element) => element.id == id);
+    updatedPresentPets.removeWhere((element) => element.id == id);
     emit(
       state.copyWith(
         presentPets: updatedPresentPets,
