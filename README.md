@@ -1,30 +1,62 @@
-# pets_app
+# Adopt a Pet App
 
-A new Flutter project.
+## Table of Contents
 
-## Getting Started
+- [Description](#description)
+- [Technologies](#technologies)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Author](#author)
 
-This project is a starting point for a Flutter application that follows the
-[simple app state management
-tutorial](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple).
+## Description
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This is a simple app that allows users to adopt a pet. The app is built using Flutter and Bloc state management. The app is built using the following technologies:
 
-## Assets
+## Technologies
 
-The `assets` directory houses images, fonts, and any other files you want to
-include with your application.
+- Flutter
+- Bloc
 
-The `assets/images` directory contains [resolution-aware
-images](https://flutter.dev/docs/development/ui/assets-and-images#resolution-aware).
+## Screenshots
 
-## Localization
+<body>
+<table>
+<thead>
+<tr>
+<th>Home Page - Dark Mode</th>
+<th>Home Page - Light Mode</th>
+<th>Details Page</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="./screenshots/1.png" ></td>
+<td><img src="./screenshots/2.png" ></td>
+<td><img src="./screenshots/3.png" ></td>
+</tr>
+</tbody>
+</table>
+</body>
 
-This project generates localized messages based on arb files found in
-the `lib/src/localization` directory.
+## Installation
 
-To support additional languages, please visit the tutorial on
-[Internationalizing Flutter
-apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
+To run the app, you need to have Flutter installed on your machine. If you don't have Flutter installed, you can follow the instructions [here](https://flutter.dev/docs/get-started/install).
+
+After installing Flutter, you can clone the repository and run the following command to install the dependencies:
+
+```bash
+flutter pub get
+```
+
+## Usage
+
+To run the app, you can use the following command:
+
+```bash
+flutter run
+```
+
+## Author
+
+- [Mohammed Azam](https://linkedin.com/in/azam5)

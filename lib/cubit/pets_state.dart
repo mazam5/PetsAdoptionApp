@@ -2,7 +2,6 @@ part of 'pets_cubit.dart';
 
 class PetsInitial extends PetsState {
   const PetsInitial({
-    required bool darkMode,
     required List<PetModel> pets,
     required List<PetModel> presentPets,
     required List<PetModel> adoptedPets,
@@ -10,7 +9,6 @@ class PetsInitial extends PetsState {
     required String search,
   }) : super(
           pets: pets,
-          darkMode: darkMode,
           presentPets: presentPets,
           adoptedPets: adoptedPets,
           filter: filter,
@@ -21,7 +19,6 @@ class PetsInitial extends PetsState {
 class PetsState extends Equatable {
   const PetsState({
     required this.pets,
-    required this.darkMode,
     required this.presentPets,
     required this.adoptedPets,
     required this.filter,
@@ -33,13 +30,11 @@ class PetsState extends Equatable {
   final List<PetModel> adoptedPets;
   final String filter;
   final String search;
-  final bool darkMode;
 
   @override
-  List<Object?> get props => [pets, darkMode, presentPets];
+  List<Object?> get props => [pets, presentPets];
 
   PetsState copyWith({
-    bool? darkMode,
     List<PetModel>? pets,
     List<PetModel>? presentPets,
     required List<PetModel> adoptedPets,
@@ -50,7 +45,6 @@ class PetsState extends Equatable {
       search: search,
       pets: pets ?? this.pets,
       presentPets: presentPets ?? this.presentPets,
-      darkMode: darkMode ?? this.darkMode,
     );
   }
 }

@@ -6,7 +6,7 @@ import 'package:pets_app/cubit/pets_cubit.dart';
 
 import '../screens/details_page.dart';
 import '../screens/home_page.dart';
-import '../src/adopted/darkmode_controller.dart';
+import '../src/darkmode/darkmode_controller.dart';
 import '../screens/history_page.dart';
 
 /// The Widget that configures your application.

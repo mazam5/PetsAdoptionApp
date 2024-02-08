@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pets_app/cubit/pets_cubit.dart';
-import 'package:pets_app/src/adopted/darkmode_controller.dart';
+import 'package:pets_app/src/darkmode/darkmode_controller.dart';
 import 'package:pets_app/widgets/pet_item.dart';
 
 import 'history_page.dart';

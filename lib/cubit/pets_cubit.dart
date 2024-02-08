@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../models/pets.dart';
@@ -18,7 +17,6 @@ class PetsCubit extends Cubit<PetsState> {
             pets: [],
             presentPets: [],
             adoptedPets: [],
-            darkMode: false,
           ),
         );
 
@@ -28,7 +26,6 @@ class PetsCubit extends Cubit<PetsState> {
   void toggleDarkMode() {
     emit(
       state.copyWith(
-        darkMode: !state.darkMode,
         pets: state.pets,
         adoptedPets: state.adoptedPets,
         presentPets: state.presentPets,
@@ -46,7 +43,6 @@ class PetsCubit extends Cubit<PetsState> {
         presentPets: _getPaginatedPets(
           pets.map((e) => PetModel.fromJson(e)).toList(),
         ),
-        darkMode: false,
         adoptedPets: state.adoptedPets,
       ),
     );
@@ -64,7 +60,6 @@ class PetsCubit extends Cubit<PetsState> {
       emit(
         state.copyWith(
           presentPets: _getPaginatedPets(state.pets),
-          darkMode: false,
           pets: state.pets,
           adoptedPets: state.adoptedPets,
         ),
@@ -78,7 +73,6 @@ class PetsCubit extends Cubit<PetsState> {
       emit(
         state.copyWith(
           presentPets: _getPaginatedPets(state.pets),
-          darkMode: false,
           pets: state.pets,
           adoptedPets: state.adoptedPets,
         ),
@@ -98,7 +92,6 @@ class PetsCubit extends Cubit<PetsState> {
     emit(
       state.copyWith(
         presentPets: searchedPets,
-        darkMode: false,
         adoptedPets: [],
       ),
     );
@@ -115,7 +108,6 @@ class PetsCubit extends Cubit<PetsState> {
     emit(
       state.copyWith(
         presentPets: filteredPets,
-        darkMode: false,
         adoptedPets: [],
       ),
     );
@@ -132,33 +124,8 @@ class PetsCubit extends Cubit<PetsState> {
       state.copyWith(
         presentPets: updatedPresentPets,
         adoptedPets: adoptedPets,
-        darkMode: false,
       ),
     );
     print(state.adoptedPets.length);
   }
-}
-
-enum ThemeModeEvent { loadSettings, updateThemeMode }
-
-class ThemeModeCubit extends Cubit<ThemeMode> {
-  final DarkModeService _settingsService;
-
-  ThemeModeCubit(this._settingsService) : super(ThemeMode.system);
-
-  Future<void> loadSettings() async {
-    ThemeMode mode = await _settingsService.themeMode();
-    emit(mode);
-  }
-
-  Future<void> updateThemeMode(ThemeMode newThemeMode) async {
-    emit(newThemeMode);
-    await _settingsService.updateThemeMode(newThemeMode);
-  }
-}
-
-class DarkModeService {
-  Future<ThemeMode> themeMode() async => ThemeMode.system;
-
-  Future<void> updateThemeMode(ThemeMode theme) async {}
 }
